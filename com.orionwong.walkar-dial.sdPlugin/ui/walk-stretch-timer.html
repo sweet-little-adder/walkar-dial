@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Walk &amp; Stretch Timer</title>
+    <meta charset="utf-8" />
+    <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+
+<body>
+    <sdpi-item label="Interval (min)">
+        <sdpi-range setting="intervalMinutes" min="5" max="120" step="5" default="30"></sdpi-range>
+    </sdpi-item>
+    <sdpi-item label="Snooze (min)">
+        <sdpi-range setting="snoozeMinutes" min="1" max="30" step="1" default="5"></sdpi-range>
+    </sdpi-item>
+    <sdpi-item label="Ring Color">
+        <sdpi-color setting="ringColor" default="#30d158"></sdpi-color>
+    </sdpi-item>
+</body>
+
+</html>

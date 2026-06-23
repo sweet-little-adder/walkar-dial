@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+	"Name": "Walkar Dial",
+	"Version": "0.1.0.0",
+	"Author": "Orion Wong",
+	"Actions": [
+		{
+			"Name": "Walk & Stretch",
+			"UUID": "com.orionwong.walkar-dial.timer",
+			"Icon": "imgs/actions/walk-stretch/icon",
+			"Tooltip": "30-minute walk & stretch reminder with a ring countdown on the dial LCD.",
+			"PropertyInspectorPath": "ui/walk-stretch-timer.html",
+			"Controllers": [
+				"Encoder"
+			],
+			"Encoder": {
+				"layout": "layouts/ring.json",
+				"TriggerDescription": {
+					"Push": "Reset timer",
+					"Rotate": "Unused"
+				}
+			},
+			"States": [
+				{
+					"Image": "imgs/actions/walk-stretch/key",
+					"ShowTitle": false
+				}
+			]
+		}
+	],
+	"Category": "Walkar Dial",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Reminds you to walk and stretch every 30 minutes with an Apple Watch-style ring countdown.",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "24",
+		"Debug": "enabled"
+	},
+	"UUID": "com.orionwong.walkar-dial"
+}
